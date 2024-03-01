@@ -1,14 +1,15 @@
-use_bpm 60
+use_bpm 120
 new_tank = "C:/Users/Nolan_Tinsley/Music/New Tank/newtank.mp3"
 
-live_loop :song do
+1.times do
   sample new_tank
 end
+
 
 sleep 16
 
 live_loop :synth do
-  20.times do
+  5.times do
     #measure 1
     play :r
     sleep 0.5
@@ -149,6 +150,9 @@ end
 sleep 8
 
 live_loop:that_loop do
-  sample :drum_snare_soft
-  sleep 0.5
+  520.times do
+    sample :drum_snare_soft
+    sleep 0.5
+  end
+  stop
 end
