@@ -1,0 +1,154 @@
+use_bpm 60
+new_tank = "C:/Users/Nolan_Tinsley/Music/New Tank/newtank.mp3"
+
+live_loop :song do
+  sample new_tank
+end
+
+sleep 16
+
+live_loop :synth do
+  20.times do
+    #measure 1
+    play :r
+    sleep 0.5
+    play :eb5
+    sleep 0.25
+    play :eb5
+    sleep 0.25
+    play :c5
+    sleep 0.25
+    play :eb5
+    sleep 0.25
+    play :c5
+    sleep 0.25
+    play :c5
+    sleep 0.25
+    play :d5
+    sleep 0.25
+    play :c5
+    sleep 0.25
+    play :d5
+    sleep 0.25
+    play :d5
+    sleep 0.25
+    play :bb4
+    sleep 0.25
+    play :d5
+    sleep 0.25
+    play :bb4
+    sleep 0.25
+    play :bb4
+    sleep 0.25
+    
+    #measure 2
+    play :a4
+    sleep 0.25
+    play :bb4
+    sleep 0.25
+    play :a4
+    sleep 0.25
+    play :a4
+    sleep 0.25
+    play :bb4
+    sleep 0.25
+    play :a4
+    sleep 0.25
+    play :bb4
+    sleep 0.25
+    play :bb4
+    sleep 0.25
+    play :g4
+    sleep 0.25
+    play :a4
+    sleep 0.25
+    play :g4
+    sleep 0.25
+    play :g4
+    sleep 0.25
+    play :f4
+    sleep 0.25
+    play :g4
+    sleep 0.25
+    play :f4
+    sleep 0.25
+    play :f4
+    sleep 0.25
+    
+    #measure 3
+    play :c5
+    sleep 0.25
+    play :f4
+    sleep 0.25
+    play :c5
+    sleep 0.25
+    play :c5
+    sleep 0.25
+    play :c5
+    sleep 0.25
+    play :c5
+    sleep 0.25
+    play :c5
+    sleep 0.25
+    play :c5
+    sleep 0.25
+    play :d5
+    sleep 0.25
+    play :c5
+    sleep 0.25
+    play :d5
+    sleep 0.25
+    play :d5
+    sleep 0.25
+    play :f5
+    sleep 0.25
+    play :d5
+    sleep 0.25
+    play :f5
+    sleep 0.25
+    play :f5
+    sleep 0.25
+    
+    #measure 4
+    play :d5
+    sleep 0.25
+    play :f5
+    sleep 0.25
+    play :d5
+    sleep 0.25
+    play :d5
+    sleep 0.25
+    play :c5
+    sleep 0.25
+    play :d5
+    sleep 0.25
+    play :c5
+    sleep 0.25
+    play :c5
+    sleep 0.25
+    play :bb4
+    sleep 0.25
+    play :c5
+    sleep 0.25
+    play :bb4
+    sleep 0.25
+    play :bb4
+    sleep 0.25
+    play :d5
+    sleep 0.25
+    play :c5
+    sleep 0.25
+    play :d5
+    sleep 0.25
+    play :d5
+    sleep 0.25
+  end
+  stop
+end
+
+sleep 8
+
+live_loop:that_loop do
+  sample :drum_snare_soft
+  sleep 0.5
+end
