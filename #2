@@ -1,0 +1,48 @@
+Carnival = "C:/Users/Nolan_Tinsley/Music/Carnival INSTRUMENTAL2.mp3"
+Wonder =  "C:/Users/Nolan_Tinsley/Music/Kanye West - I Wonder2.mp3"
+Love = "C:/Users/Nolan_Tinsley/Music/I Love Kanye2.mp3"
+
+use_bpm 160
+define :sum do |a,b,c,d,e|
+  use_synth :piano
+  play a
+  play b
+  sleep 0.5
+  play c
+  sleep 0.5
+  play d
+  sleep 0.5
+  play e
+  sleep 0.5
+end
+
+live_loop :calm do
+  sum :gs3,:e2,:e3,:gs3,:b3
+  sum :gs3,:e2,:e3,:gs3,:b3
+  sum :gs3,:e2,:e3,:gs3,:b3
+  sum :gs3,:e2,:e3,:gs3,:b3
+  sum :gs3,:e2,:ds3,:gs3,:b3
+  sum :gs3,:e2,:ds3,:gs3,:b3
+  sum :gs3,:e2,:ds3,:gs3,:b3
+  sum :gs3,:e2,:ds3,:gs3,:b3
+  sum :e3,:e3,:cs3,:e3,:gs3
+  sum :e3,:e3,:cs3,:e3,:gs3
+  sum :e3,:e3,:cs3,:e3,:gs3
+  sum :e3,:e3,:cs3,:e3,:gs3
+end
+
+sample Wonder, amp: 0.5
+sleep 100
+
+sample Love, amp: 1
+34.times do
+  sample :drum_cymbal_hard, amp: 0.5
+  sleep 1
+end
+sleep 20
+
+sample Carnival, amp: 4
+34.times do
+  sample :drum_snare_soft, amp: 0.5
+  sleep 1
+end
